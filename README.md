@@ -86,3 +86,6 @@ define('big data', function(err, res) {
 
 #### Data source
 All data is retrieved from the _unofficial_ Google dictionary dataset. [Link](https://www.googleapis.com/scribe/v1/research?key=AIzaSyDqVYORLCUXxSv7zneerIgC2UYMnxvPeqQ&dataset=dictionary&dictionaryLanguage=en&query=big%20data&callback=callback).
+
+#### Contribute
+Feel free to [make a pull request](https://github.com/kshvmdn/define-it/pulls) or [open an issue](https://github.com/kshvmdn/define-it/issues).
