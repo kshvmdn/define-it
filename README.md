@@ -10,9 +10,12 @@ npm install define-it
 ```
 
 #### Running
+
+###### Either request a full JSON response or only the words' meanings.
+
+Full JSON
 ```javascript
-var defineJson = require('define-it').json, // for full JSON
-	define = require('define-it').definitions; // for an array of definitions
+var defineJson = require('define-it').json;
 
 defineJSON('big data', function(err, res) {
 	if (err) console.error(err);
@@ -66,15 +69,20 @@ defineJSON('big data', function(err, res) {
  ],
  "responseHandled": true
 }
+```
+
+Only meanings (~~some~~ most words have multiple meanings, so generally arr.length > 1)
+```javascript
+var define = require('define-it').definitions;
 
 define('big data', function(err, res) {
 	if (err) console.error(err);
 	if (res) console.log(res);
 });
 
-// will return (most words have multiple meanings so array.length will be >1)
+// will return
 ["extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions."]
 ```
 
 #### Data source
-All data is retrieved from the Google dictionary dataset. [Link](https://www.googleapis.com/scribe/v1/research?key=AIzaSyDqVYORLCUXxSv7zneerIgC2UYMnxvPeqQ&dataset=dictionary&dictionaryLanguage=en&query=big%20data&callback=callback)
+All data is retrieved from the _unofficial_ Google dictionary dataset. [Link](https://www.googleapis.com/scribe/v1/research?key=AIzaSyDqVYORLCUXxSv7zneerIgC2UYMnxvPeqQ&dataset=dictionary&dictionaryLanguage=en&query=big%20data&callback=callback).
