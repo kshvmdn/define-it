@@ -2,7 +2,7 @@
 
 const request = require('request');
 
-var getJSON = function(query, cb) {
+module.exports.json = function(query, cb) {
   
   if (typeof query != 'string') return cb(new TypeError('Expected a string as first argument.'), null);
 
@@ -20,8 +20,8 @@ var getJSON = function(query, cb) {
   });
 }
 
-var getDefinitions = function(query, cb) {
-  getJSON(query, function(error, response) {
+module.exports.definitions = function(query, cb) {
+  module.exports.json(query, function(error, response) {
     if (response['data'] == undefined) return cb(new Error('No results for given query.'), null);
 
     var definitions = [];
@@ -32,6 +32,3 @@ var getDefinitions = function(query, cb) {
     cb(error, definitions);
   });
 }
-
-module.exports = getJSON;
-module.exports.definitions = getDefinitions;

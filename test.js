@@ -3,7 +3,7 @@
 const assert = require('assert');
 const expect = require('chai').expect;
 
-const defineJSON = require('./');
+const defineJSON = require('./').json;
 const define = require('./').definitions;
 
 describe('word with multiple meanings', function() {
