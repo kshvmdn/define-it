@@ -1,4 +1,4 @@
-# Define IT
+# DefineIt
 Get dictionary definitions for any word in your Node app. Available on [npm](http://npmjs.org/packages/define-it).
 
 ### Usage
