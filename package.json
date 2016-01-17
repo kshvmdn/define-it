@@ -1,0 +1,38 @@
+{
+  "name": "define-it",
+  "version": "0.0.0",
+  "description": "A node package to define words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint && mocha test.js",
+    "start": "node ./index.js",
+    "watch": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshvmdn/define-it.git"
+  },
+  "keywords": [
+    "dictionary",
+    "words",
+    "define",
+    "kshvmdn"
+  ],
+  "author": {
+    "name": "Kashav Madan",
+    "email": "kshvmdn@gmail.com",
+    "url": "kshvmdn.me"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kshvmdn/define-it/issues"
+  },
+  "homepage": "https://github.com/kshvmdn/define-it#readme",
+  "dependencies": {
+    "got": "^6.1.0",
+    "request": "^2.67.0"
+  }
+}
