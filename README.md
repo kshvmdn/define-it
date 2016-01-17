@@ -1,5 +1,5 @@
 # Define IT
-Node package to get the definition of words. Available on [npm](http://npmjs.org/packages/define-it).
+Get dictionary definitions for any word in your Node app. Available on [npm](http://npmjs.org/packages/define-it).
 
 ### Usage
 
@@ -11,7 +11,7 @@ npm install define-it
 
 #### Running
 
-###### Either request a full JSON response or only the words' meanings.
+**Either request a full JSON response or only the words' meanings.**
 
 Full JSON
 ```javascript
@@ -71,7 +71,7 @@ defineJSON('big data', function(err, res) {
 }
 ```
 
-Only meanings (~~some~~ most words have multiple meanings, so generally arr.length > 1)
+Definitions only (~~some~~ most words have multiple meanings, so generally arr.length > 1)
 ```javascript
 var define = require('define-it').definitions;
 
