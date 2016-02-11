@@ -1,6 +1,6 @@
 {
   "name": "define-it",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A node package to define words.",
   "main": "index.js",
   "scripts": {
