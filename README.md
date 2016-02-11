@@ -89,3 +89,7 @@ All data is retrieved from the _unofficial_ Google dictionary dataset. [Link](ht
 
 #### Contribute
 Feel free to [make a pull request](https://github.com/kshvmdn/define-it/pulls) or [open an issue](https://github.com/kshvmdn/define-it/issues).
+
+#### Update
+__Feb. 11, 2016__ - The Google dictionairy api has been deprecated so the package is _broken_. Currently working on refactoring to use another source for definitions.
+
